@@ -1,4 +1,5 @@
 {
+  "homepage": "https://Prashant-bhadauriya.github.io/refine_CRM_Dashboard",
   "name": "clean-yaks-trade",
   "version": "0.1.0",
   "private": true,
@@ -17,6 +18,7 @@
     "@uiw/react-md-editor": "^4.0.3",
     "antd": "^5.0.5",
     "dayjs": "^1.11.10",
+    "gh-pages": "^6.1.1",
     "graphql-tag": "^2.12.6",
     "graphql-ws": "^5.9.1",
     "react": "^18.0.0",
@@ -44,6 +46,8 @@
   },
   "scripts": {
     "dev": "refine dev",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "tsc && refine build",
     "preview": "refine start",
     "refine": "refine",
